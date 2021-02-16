@@ -1,0 +1,11 @@
+<h1><%= @project.name %></h1>
+
+    <b><p>Description</p></b>
+    <p><%= @project.description %></p>
+
+    <b><p>Target</p></b>
+    <p><%= number_to_currency(@project.target_pledge_amount) %></p>
+
+    <b><p>I will achieve this goal at</p></b>
+    <p><%= @project.will_achieve %></p>
+

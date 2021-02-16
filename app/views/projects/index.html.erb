@@ -1,0 +1,22 @@
+<h1>Projects</h1>
+
+
+<table border="1" cellpadding="5">
+  <tr>
+    <th>Project</th>
+    <th>Description</th>
+    <th>Target</th>
+    <th>I will achieve this goal at</th>
+  </tr>
+  <% @projects.each do |project| %>
+  <tr>
+    <td><%= project.name %></td>
+    <td><%= project.description %></td>
+    <td><%= number_to_currency(project.target_pledge_amount) %></td>
+    <td><%= project.will_achieve %></td>
+  </tr>
+  <% end %>
+
+</table>
+
+
