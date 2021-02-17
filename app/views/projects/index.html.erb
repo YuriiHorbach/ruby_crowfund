@@ -10,7 +10,7 @@
   </tr>
   <% @projects.each do |project| %>
   <tr>
-    <td><%= project.name %></td>
+    <td><%= link_to project.name, project %></td>
     <td><%= project.description %></td>
     <td><%= number_to_currency(project.target_pledge_amount) %></td>
     <td><%= project.will_achieve %></td>
