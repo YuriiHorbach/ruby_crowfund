@@ -1,6 +1,9 @@
-<h1>Projects</h1>
+<h1><%= pluralize(@projects.size, 'Event') %></h1>
 
+<%= link_to "Add project", new_project_path %>
 
+<br>
+<br>
 <table border="1" cellpadding="5">
   <tr>
     <th>Project</th>
